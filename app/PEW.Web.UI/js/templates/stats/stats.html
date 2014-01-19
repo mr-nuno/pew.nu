@@ -1,0 +1,149 @@
+﻿<h4>Statistics</h4>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+
+            {{#each this}}
+                <th id="{{this.GamerTag}}-column">
+                    {{this.GamerTag}}
+                    <span class="badge badge-important" style="display:none;">&nbsp;</span>
+                </th>
+            {{/each}}
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Skill</td>
+
+            {{#each this}}
+                <td>{{this.Level}}</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Total points</td>
+
+            {{#each this}}
+                <td>{{this.TotalPoints}}</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Wins</td>
+
+            {{#each this}}
+                <td>{{this.Wins}} ({{this.WinPercent}}%)</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Losses</td>
+
+            {{#each this}}
+                <td>{{this.Losses}} ({{this.LossPercent}}%)</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Overtime losses</td>
+
+            {{#each this}}
+                <td>{{this.OvertimeLosses}} ({{this.OvertimeLossPercent}}%)</td>
+            {{/each}}
+ 
+        </tr>
+        <tr>
+            <td>Current streak</td>
+
+            {{#each this}}
+                <td>{{this.CurrentStreak}}</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Disqualified</td>
+
+            {{#each this}}
+                <td>{{this.NumberOfGamesForfeited}} ({{this.DidNotFinish}}%)</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Goals for</td>
+
+            {{#each this}}
+                <td>{{this.TotalGoalsFor}} ({{this.AverageGoalsFor}}/game)</td>
+            {{/each}}
+            
+        </tr>
+        <tr>
+            <td>Goals against</td>
+
+            {{#each this}}
+                <td>{{this.TotalGoalsAgainst}} ({{this.AverageGoalsAgainst}}/game)</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Hits</td>
+
+            {{#each this}}
+                <td>{{this.TotalNumberOfHits}} ({{this.AverageNumberOfHits}}/game)</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Penalty minutes</td>
+
+            {{#each this}}
+                <td>{{this.PenaltyMinutes}} ({{this.AveragePenaltyMinutes}}/game)</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Power play</td>
+
+            {{#each this}}
+                <td>{{this.PowerPlayPercent}}%</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Penalty kill</td>
+
+            {{#each this}}
+                <td>{{this.PenaltyKillPecentage}}%</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>One timers</td>
+
+            {{#each this}}
+                <td>{{this.OneTimerGoals}} on {{this.OneTimerTotalShots}} shots ({{this.OneTimerPercentage}}%)</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Passing</td>
+
+            {{#each this}}
+                <td>{{this.PassingPecentage}}%</td>
+            {{/each}}
+
+        </tr>
+        <tr>
+            <td>Faceoffs</td>
+
+            {{#each this}}
+                <td>{{this.FaceOffPercentage}}%</td>
+            {{/each}}
+
+        </tr>
+
+
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+<h4>Leaderboard</h4>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <tr>
+                <td>#</td>
+                <td>Gamer</td>
+                <td>Points</td>
+                <td>Skill</td>
+                <td>Wins</td>
+                <td>Losses</td>
+                <td>Disqualified</td>
+                <td>GamesPlayed</td>
+                <td>&nbsp;</td>
+            </tr>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each this.Items}}
+            <tr>
+                <td>{{this.Rank}}</td>
+                <td>{{this.GamerTag}}</td> 
+                <td>{{this.Points}}</td>
+                <td>{{this.Level}}</td>
+                <td>{{this.Wins}} ({{this.WinPercent}}%)</td>
+                <td>{{this.Losses}} ({{this.LossPercent}}%)</td>
+                <td>{{this.Disqualified}}</td>
+                <td>{{this.GamesPlayed}}</td>
+                <td>
+                    <a href="#compare/{{this.GamerTag}}">compare stats with {{this.GamerTag}}</a>
+                </td>
+            </tr>
+        {{/each}}
+
+            <tr style="color: white;font-weight: bold;">
+                <td style="background-color: black;">-</td>
+                <td style="background-color: black;">{{this.Mine.GamerTag}}</td> 
+                <td style="background-color: black;">{{this.Mine.Points}}</td>
+                <td style="background-color: black;">{{this.Mine.Level}}</td>
+                <td style="background-color: black;">{{this.Mine.Wins}} ({{this.Mine.WinPercent}}%)</td>
+                <td style="background-color: black;">{{this.Mine.Losses}} ({{this.Mine.LossPercent}}%)</td>
+                <td style="background-color: black;">{{this.Mine.Disqualified}}</td>
+                <td style="background-color: black;">{{this.Mine.GamesPlayed}}</td>
+                <td style="background-color: black;">&nbsp;</td>
+            </tr>
+    </tbody>
+
+</table>

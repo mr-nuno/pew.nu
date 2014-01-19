@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90F54F41-F9BD-4E63-8120-706F25CF6C8B}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PEW.Web</RootNamespace>
+    <AssemblyName>PEW.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database">
+      <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AppHelper.cs" />
+    <Compile Include="Helpers\UnityControllerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\bg_menu.gif" />
+    <Content Include="Content\Images\bg_t.gif" />
+    <Content Include="Content\Images\bullet.gif" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\logo_.jpg" />
+    <Content Include="Content\Images\top_bg.gif" />
+    <Content Include="Content\Images\top_bg_.gif" />
+    <Content Include="Content\Scripts\Framework\jquery-1.4.2.js" />
+    <Content Include="Content\Scripts\Framework\jquery-1.4.2.min.js" />
+    <Content Include="Content\Scripts\Framework\jquery-ui-1.8.4.min.js" />
+    <Content Include="Content\Scripts\Plugins\jquery.jstree.js" />
+    <Content Include="Content\Scripts\Plugins\themes\apple\bg.jpg" />
+    <Content Include="Content\Scripts\Plugins\themes\apple\d.png" />
+    <Content Include="Content\Scripts\Plugins\themes\apple\dot_for_ie.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\apple\style.css" />
+    <Content Include="Content\Scripts\Plugins\themes\apple\throbber.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\classic\d.png" />
+    <Content Include="Content\Scripts\Plugins\themes\classic\dot_for_ie.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\classic\style.css" />
+    <Content Include="Content\Scripts\Plugins\themes\classic\throbber.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\default-rtl\d.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\default-rtl\d.png" />
+    <Content Include="Content\Scripts\Plugins\themes\default-rtl\dots.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\default-rtl\style.css" />
+    <Content Include="Content\Scripts\Plugins\themes\default-rtl\throbber.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\default\d.gif" />
+    <Content Include="Content\Scripts\Plugins\themes\default\d.png" />
+    <Content Include="Content\Scripts\Plugins\themes\default\style.css" />
+    <Content Include="Content\Scripts\Plugins\themes\default\throbber.gif" />
+    <Content Include="Content\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\Styles\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\Styles\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\Styles\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\Styles\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="Content\Styles\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\Styles\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="Content\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\Styles\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\Styles\jquery-ui.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Shared\MessageControl.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Site.css" />
+    <Content Include="Content\Scripts\Framework\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Content\Scripts\Plugins\jquery.validate.js" />
+    <Content Include="Content\Scripts\Plugins\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\Plugins\jquery.validate-vsdoc.js" />
+    <Content Include="Content\Scripts\Framework\MicrosoftAjax.js" />
+    <Content Include="Content\Scripts\Framework\MicrosoftAjax.debug.js" />
+    <Content Include="Content\Scripts\Framework\MicrosoftMvcAjax.js" />
+    <Content Include="Content\Scripts\Framework\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Content\Scripts\Framework\MicrosoftMvcValidation.js" />
+    <Content Include="Content\Scripts\Framework\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PEW.ApplicationResources\PEW.ApplicationResources.csproj">
+      <Project>{21416EA4-92A8-4B80-A6F6-16C2F4E0EC15}</Project>
+      <Name>PEW.ApplicationResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PEW.Core\PEW.Core.csproj">
+      <Project>{A47E8978-FECF-42C6-B424-2EB024EE6574}</Project>
+      <Name>PEW.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PEW.Data\PEW.Data.csproj">
+      <Project>{8A5533E5-2026-40E3-A952-C59F4B6FA6AD}</Project>
+      <Name>PEW.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PEW.Repository\PEW.Repository.csproj">
+      <Project>{9ADD02D9-87C2-4108-8FA6-CC1482ADDE97}</Project>
+      <Name>PEW.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PEW.Web.Controllers\PEW.Web.Controllers.csproj">
+      <Project>{F89C73DC-15BC-4215-AEA6-EE973E7565BC}</Project>
+      <Name>PEW.Web.Controllers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>3000</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
