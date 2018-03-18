@@ -19,5 +19,19 @@ namespace PEW.Web
 
             /* updating to version 2.0.0 */
         }
+
+        public static string GetVersion()
+        {
+            try
+            {
+                var assembly = typeof(MvcApplication).Assembly;
+                var name = assembly.GetName();
+                return name.Version.ToString();
+            }
+            catch (Exception)
+            {
+                return "0.0.0.0";
+            }
+        }
     }
 }
