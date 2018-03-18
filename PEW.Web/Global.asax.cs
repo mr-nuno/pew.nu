@@ -16,6 +16,8 @@ namespace PEW.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            /* updating to version 2.0.0 */
         }
     }
 }
