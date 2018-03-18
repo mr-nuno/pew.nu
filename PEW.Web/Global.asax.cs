@@ -17,5 +17,19 @@ namespace PEW.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        public static string GetVersion()
+        {
+            try
+            {
+                var assembly = typeof(MvcApplication).Assembly;
+                var name = assembly.GetName();
+                return name.Version.ToString();
+            }
+            catch (Exception)
+            {
+                return "0.0.0.0";
+            }
+        }
     }
 }
