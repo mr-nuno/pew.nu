@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PEW.Web", "PEW.Web\PEW.Web.csproj", "{DBC79CD6-DE8E-451F-A0DC-187C857CB65B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PEW.Web.Api", "PEW.Web.Api\PEW.Web.Api.csproj", "{674AE741-20B8-493F-B729-E8A76D5B4B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PEW.Web.Api", "PEW.Web.Api\PEW.Web.Api.csproj", "{674AE741-20B8-493F-B729-E8A76D5B4B09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PEW.Web.App", "PEW.Web.App\PEW.Web.App.csproj", "{B70140B1-7882-4474-8050-840780854585}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{674AE741-20B8-493F-B729-E8A76D5B4B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674AE741-20B8-493F-B729-E8A76D5B4B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674AE741-20B8-493F-B729-E8A76D5B4B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70140B1-7882-4474-8050-840780854585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70140B1-7882-4474-8050-840780854585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70140B1-7882-4474-8050-840780854585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70140B1-7882-4474-8050-840780854585}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
